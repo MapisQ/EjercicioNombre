@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: Platform_excercise
+  datasource:
+    password: 'platform'
+    url: jdbc:postgresql://localhost:5432/platform_excercise
+    username: platformExcercise
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
